@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('/images/casino.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la URL de tu imagen */
+    background-image: url('./images/casino.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la URL de tu imagen */
     background-repeat: repeat; /* Repetir la imagen */
     margin: 0;
 }
