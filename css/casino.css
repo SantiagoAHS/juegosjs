@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/images/casino.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la URL de tu imagen */
+    background-repeat: repeat; /* Repetir la imagen */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+    margin: 20px; /* Espacio alrededor del contenido */
+}
+
+.slot-machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.machine-container {
+    margin-right: 20px; /* Espacio entre la máquina tragamonedas y las instrucciones */
+    background-color: #d80b0b; /* Color de fondo del contenedor de la máquina */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad a la máquina */
+    font-family: 'Tahoma', sans-serif; /* Cambia el tipo de letra */
+    color: #fff; /* Color del texto de las instrucciones */
+}
+
+.reels-container {
+    display: flex;
+}
+
+.reel {
+    width: 100px;
+    height: 150px;
+    background-color: #e0e0e0;
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    position: relative;
+    animation: spinReel 2s ease-out 0s 1 normal;
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra */
+    color: #333; /* Cambia el color de las letras */
+}
+
+.instructions {
+    max-width: 300px; /* Ajusta el ancho máximo según tu preferencia */
+    color: #fff; /* Color del texto de las instrucciones */
+    background-color: #3b3b3b; /* Color de fondo del contenedor de instrucciones */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad a las instrucciones */
+    font-family: 'Verdana', sans-serif; /* Cambia el tipo de letra */
+    font-size: 16px; /* Cambia el tamaño de letra */
+}
+
+@keyframes spinReel {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(720deg);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Tahoma', sans-serif; /* Cambia el tipo de letra */
+}
+
+button:hover {
+    background-color: #45a049; /* Cambia el color al pasar el ratón sobre el botón */
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/fondo.jpeg');
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        h1 {
+            color: white; /* Cambia el color del texto a blanco */
+            font-size: 36px; /* Ajusta el tamaño de la fuente según sea necesario */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega un efecto de sombra para el brillo retro */
+        }
+        
+        a {
+            text-decoration: none;
+            margin: 20px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        a img {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        a:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center; /* Centra el texto en el footer */
+        }
+    </style>
+    <link rel="stylesheet" href="/path/to/your/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la plataforma de juegos con canvas</h1>
+
+        <!-- Imagen enlazada al juego de tragamonedas -->
+        <a href="./reversi.html">
+            <img src="./images/reversi.png" alt="Tragamonedas" width="200" height="200">
+        </a>
+
+        <!-- Imagen enlazada al juego de reversi -->
+        <a href="./casino.html">
+            <img src="./images/maquina.jpg" alt="Reversi" width="200" height="200">
+        </a>
+
+        <!-- Imagen enlazada al juego de carrera -->
+        <a href="./caballo.html">
+            <img src="/images/meteoro.jpg" alt="Carrera" width="200" height="200">
+        </a>
+
+        <!-- Imagen enlazada al juego de carrera -->
+        <a href="./sp.html">
+            <img src="./images/bola.jpg" alt="Carrera" width="200" height="200">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Santiago Artuto Huerta Serrano</p>
+    </footer>
+</body>
+</html>

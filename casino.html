@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina Tragamonedas</title>
+    <link rel="stylesheet" href="./css/casino.css">
+</head>
+<body>
+    <div class="container">
+        <div class="machine-container">
+            <div class="slot-machine">
+                <!-- Agrega esto a tu HTML donde quieras mostrar el resultado -->
+                <div id="result"></div>
+
+                <div class="reels-container">
+                    <div class="reel" id="reel1"></div>
+                    <div class="reel" id="reel2"></div>
+                    <div class="reel" id="reel3"></div>
+                </div>
+                <button onclick="spin()">Girar</button>
+            </div>
+        </div>
+
+        <div class="instructions-container">
+            <div class="instructions">
+                <h2>Instrucciones</h2>
+                <p>Presiona el botón "Girar" para jugar.</p>
+                <p>Obtén coincidencias en los carretes para ganar puntos y monedas.</p>
+                <p>Se otorgan 100 puntos por coincidencia.</p>
+                <p>Si te quedas sin monedas, pierdes el juego y comparan resultados.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/casino.js"></script>
+</body>
+</html>
